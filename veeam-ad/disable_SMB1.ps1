@@ -1,4 +1,4 @@
-#Should run before ./scripts/win-updates.ps1
+#Should run before Packer Script ./scripts/win-updates.ps1
 
 if (!(New-Object System.Security.Principal.WindowsPrincipal(
     [Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole(
