@@ -10,6 +10,7 @@ Write-Output "Testing if SMB1 is active and installed..."
 if (Get-WindowsFeature FS-SMB1) {
     Write-Output "SMB1 is active, removing the feature"
     Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol
+    Uninstall-WindowsFeature FS-SMB1
     }
 	
 	
